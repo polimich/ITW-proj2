@@ -1,0 +1,123 @@
+:root {
+    --background-dark: #2B7A78;
+    --background-medium: #3AAFA9;
+    --accent: #17252A;
+    --background-light: #DEF2F1;
+    --text-color: #FEFFFF;
+}
+
+.saira-<uniquifier> {
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" <width>;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', sans-serif;
+    background-color: var(--background-medium);
+}
+
+
+
+.profile-container {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent);
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--background-light);
+    object-fit: cover;
+}
+
+.sidebar {
+    background-color: var(--accent);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-nav {
+    width: 100%;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+.sidebar-nav ul li a:hover {
+    color: var(--background-dark);
+    transition: 0.3s;
+}
+
+.sidebar-nav ul li a {
+    color: var(--background-light);
+    font-weight: normal;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 0 40px;
+    color: var(--text-color);
+    background-color: var(--background-medium);
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content, .bio-content {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em; /* Adjust size as needed */
+}
+
+.name-text {
+    color: var(--background-light);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.surname {
+    color: var(--accent);
+    font-weight: 1000;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    background-color: var(--background-medium);
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
